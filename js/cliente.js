@@ -135,7 +135,7 @@ $(document).ready(function () {
             var novoEmail = $('#u-email').val();
             var novaSenha = $('#u-senha').val();
 
-            if (novoNome != '' && novoTelefone != '' && novoEndereco != '' && novoBairro != '' && novoComplemento != '' && novaCidade != '' && novoCpf != '' && novaData_nascimento != '' && novaObservacao != '' && novoEmail != '' && novaSenha != '') {
+            if (novoNome != '' && novoTelefone != '' && novoEndereco != '' && novoBairro != '' && novaCidade != '' && novoCpf != '' && novaData_nascimento != '' && novoEmail != '' && novaSenha != '') {
 
                 $.ajax({
                     url: 'http://localhost:3333/cliente/' + id_cliente,
