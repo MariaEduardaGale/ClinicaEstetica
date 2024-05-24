@@ -1,0 +1,166 @@
+.titulo_sobre {
+	color: #5b3971;
+	text-align: center;
+	height: 100px;
+	font-size: 32px;
+	margin-top: 50px;
+}
+
+.texto1_sobre {
+	text-align: end;
+	font-size: 18px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 55%;
+	display: flex;
+	font-weight: 600;
+}
+
+.texto2_sobre {
+	text-align: end;
+	font-size: 18px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 55%;
+	display: flex;
+	margin-bottom: 10%;
+	font-weight: 600;
+}
+
+.foto1 {
+	margin-right: 50px;
+	width: 50%;
+	height: auto;
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
+	border-radius: 15px;
+
+}
+
+.foto1 img {
+	height: 40vh;
+	width: 22vw;
+	border: 10px;
+	border: #B2B2B2 20px solid;
+	border-radius: 15px;
+
+}
+
+.foto2 {
+	margin-right: 50px;
+	width: 50%;
+	height: auto;
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
+	border-radius: 15px;
+}
+
+.foto2 img {
+	height: 40vh;
+	width: 20vw;
+	border: 10px;
+	border: #B2B2B2 20px solid;
+	border-radius: 15px;
+
+}
+
+.texto1h3 {
+	text-align: right;
+	width: 50%;
+	padding-right: 100px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.texto2h3 {
+	text-align: right;
+	width: 50%;
+	padding-right: 100px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-bottom: auto;
+	text-align: start;
+}
+
+.texto1h3 h3, .texto2h3 h3 {
+	font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+	.titulo_sobre {
+		font-size: 24px;
+		height: 65px;
+	}
+
+	.texto1_sobre {
+		font-size: 14px;
+		width: 100%;
+	}
+	
+	.texto2_sobre {
+		font-size: 14px;
+		width: 94%;
+	}
+
+	.foto1 img{
+		width: 38vw;
+	}
+
+	.foto2{
+		padding-left: 6%;
+	}
+
+	.foto2 img{
+		width: 38vw;
+	}
+
+	.texto1h3{
+		padding: 20px 70px 40px 30px;
+	}
+
+	.texto2h3{
+		padding: 40px 75px 40px 20px;
+	}
+
+}
+
+@media screen and (max-width: 550px){
+	.titulo_sobre {
+		font-size: 20px;
+		height: 40px;
+	}
+
+	.texto1_sobre, .texto2_sobre{
+		font-size: 12px;
+	}
+
+	.texto1h3{
+		padding: 15px 0px 30px 20px;
+	}
+
+	.foto1{
+		width: 30%;
+		margin-left: 5%;
+	}
+
+	.foto1 img{
+		height: 28vh;
+		width: 40vw;
+		border: #B2B2B2 10px solid;
+	}
+	
+	.texto2h3 {
+    padding: 15px 20px 0px 15px;
+  }
+
+	.foto2{
+		width: 40%;
+	}
+
+	.foto2 img{
+		height: 32vh;
+		border: #B2B2B2 10px solid;
+	}
+
+}

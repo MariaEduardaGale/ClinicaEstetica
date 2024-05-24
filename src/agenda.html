@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../images/logo.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/agenda.css" />
+  <title>Ateliê - Maju Galé</title>
+</head>
+
+<body>
+
+  <div id="wrapper">
+    <div class="container body-content">
+      <header>
+        <div class="logo">
+          <img src="../images/logo.svg" alt="logo escrito M G atelie Maju Galé" />
+        </div>
+        <div class="topo">
+          <a href="../src/login.html">
+            <button class="btnMenu">Login</button>
+          </a>
+          <div class="menu">
+            <nav>
+              <ul>
+                <a href="../src/index.html">
+                  <li>Home</li>
+                </a>
+                <a href="../src/agenda.html">
+                  <li>Agenda</li>
+                </a>
+                <a href="../src/servicos.html">
+                  <li>Serviços</li>
+                </a>
+                <a href="../src/sobre.html">
+                  <li>Sobre</li>
+                </a>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <div class="agenda">
+        <div class="titulo">
+          <h1>Agendamento</h1>
+        </div>
+        <div class="conteudo">
+          <form action="" class="form" id="form">
+            <h2>Dados Pessoais</h2>
+            <div class="controle-form dadosPessoais">
+              <label for="username">Nome Completo:*</label>
+              <input type="text" id="nome_agenda" placeholder="Digite seu nome">
+            </div>
+
+            <div class="controle-form dadosPessoais">
+              <label for="telefone">WhatsApp:*</label>
+              <input type="tel" id="telefone_agenda" placeholder="Digite seu WhatsApp">
+            </div>
+            <div class="servicos">
+              <div class="procedimento">
+                <h2>Procedimento</h2>
+                <label class="itemCheckbox controle-form"> Fibra de Vidro
+                  <input type="checkbox" name="" id="fibra_agenda">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="itemCheckbox controle-form"> Esmaltação em Gel
+                  <input type="checkbox" name="" id="esmaltacao_agenda">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="itemCheckbox controle-form"> Maquiagem
+                  <input type="checkbox" name="" id="maquiagem_agenda">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="itemCheckbox controle-form"> Limpeza de Pele
+                  <input type="checkbox" name="" id="limpeza_agenda">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="itemCheckbox controle-form"> Massagem
+                  <input type="checkbox" name="" id="massagem_agenda">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="itemCheckbox controle-form"> Drenagem Linfática
+                  <input type="checkbox" name="" id="drenagem_agenda">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="pacotesAgenda">
+                <h2>Pacotes</h2>
+                <div class="massagemRadio linha">
+                  <h3>Massagem Relaxante</h3>
+                  <div class="sessao">
+                    <label class="controle-form itemRadio">4 - Sessões
+                      <input type="radio" name="massagemRadio" checked="checked">
+                      <span class="radiomark"></span>
+                    </label>
+                  </div>
+                  <div class="sessao">
+                    <label class="controle-form itemRadio">8 - Sessões
+                      <input type="radio" name="massagemRadio">
+                      <span class="radiomark"></span>
+                    </label>
+                  </div>
+                  <div class="sessao">
+                    <label class="controle-form itemRadio">12 - Sessões
+                      <input type="radio" name="massagemRadio">
+                      <span class="radiomark"></span>
+                    </label>
+                  </div>
+                  <div class="sessao">
+                    <label class="controle-form itemRadio">Nenhuma Sessão
+                      <input type="radio" name="massagemRadio">
+                      <span class="radiomark"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="drenagemRadio linha">
+                  <h3>Drenagem Linfática</h3>
+                  <div class="sessao">
+                    <label class="controle-form itemRadio">4 - Sessões
+                      <input type="radio" name="drenagemRadio" checked="checked">
+                      <span class="radiomark"></span>
+                    </label>
+                  </div>
+                  <div class="sessao">
+                    <label class="controle-form itemRadio">8 - Sessões
+                      <input type="radio" name="drenagemRadio">
+                      <span class="radiomark"></span>
+                    </label>
+                  </div>
+                  <div class="sessao">
+                    <label class="controle-form itemRadio">12 - Sessões
+                      <input type="radio" name="drenagemRadio">
+                      <span class="radiomark"></span>
+                    </label>
+                  </div>
+                  <div class="sessao">
+                    <label class="controle-form itemRadio">Nenhuma Sessão
+                      <input type="radio" name="drenagemRadio">
+                      <span class="radiomark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="estiloHora">
+              <label for="">Data/Hora: *</label>
+              <input type="datetime-local" name="" id="">
+            </div>
+
+            <div class="botao">
+              <button type="submit" id="btnEnviar">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div> <!--Agenda-->
+
+    </div> <!--Não mexer-->
+    <footer>
+      <div class="colunaFooter">
+        <div class="socialMedia">
+          <a href="https://www.instagram.com/ateliemajugale"><i class="fa-brands fa-instagram"></i>Ateliê Maju Galé</a>
+        </div>
+        <div class="socialMedia">
+          <a href="https://api.whatsapp.com/send?phone=5516997130916&text=Quero%20agendar%20hoje!"><i
+              class="fa-brands fa-whatsapp"></i>16997130916</a>
+        </div>
+        <div class="socialMedia">
+          <a href="https://www.facebook.com/ateliemajugale/"><i class="fa-brands fa-facebook"></i>Facebook: Ateliê Maju
+            Galé</a>
+        </div>
+      </div>
+      <div class="mapa colunaFooter">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1348.378605628301!2d-48.17541889091376!3d-21.771772778048355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b8f1443c7d59dd%3A0xab66ee6f7594b72d!2sR.%20Dr.%20Walter%20Medeiros%20Mauro%2C%20184%20-%20Vila%20Harmonia%2C%20Araraquara%20-%20SP%2C%2014802-470!5e0!3m2!1spt-BR!2sbr!4v1713183237115!5m2!1spt-BR!2sbr"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="footerText colunaFooter">Desenvolvido por @KameHouse 🏠</div>
+    </footer>
+
+  </div>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://kit.fontawesome.com/4743cb5853.js" crossorigin="anonymous"></script>
+  <!-- IMPORTANTE: obedecer essa ordem -->
+</body>
+
+</html>

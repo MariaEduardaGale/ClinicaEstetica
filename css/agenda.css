@@ -1,0 +1,364 @@
+.agenda{
+  margin: 3em auto 9em;
+  width: 80vw;
+  color: #5b3971;
+}
+.titulo{
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+.conteudo{
+  width: 70vw;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+  border: 5px solid #5b3971;
+  border-radius: 15px;
+}
+
+h2{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+.dadosPessoais label{
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 1% auto;
+}
+
+.dadosPessoais input{
+  font-size: 16px;
+  width: 98%;
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px solid #5b3971;
+  margin-bottom: 0.5em;
+}
+
+.itemCheckbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+}
+
+.itemCheckbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border: 1px solid #5b3971;
+  border-radius: 3px;
+}
+
+.itemCheckbox:hover input ~ .checkmark {
+  background-color: rgba(91,57,113,0.4);
+}
+
+.itemCheckbox input:checked ~ .checkmark {
+  background-color: #5b3971;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.itemCheckbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.itemCheckbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.servicos{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5%;
+}
+
+.procedimento{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 16px;
+}
+
+.procedimento h2{
+  margin: 5% auto;
+  font-weight: bold;
+}
+
+/* #pacotes{
+  display: none;
+} */
+
+.pacotesAgenda .sessao{
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.pacotesAgenda h2{
+  margin: 1em auto 5%;
+  font-weight: bold;
+}
+
+.pacotesAgenda h3{
+  margin-bottom: 5%;
+}
+
+.itemRadio {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+}
+
+.itemRadio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radiomark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  margin-bottom: 1em;
+  background-color: rgba(91,57,113,0.4);
+  border: 1px solid #5b3971;
+  border-radius: 50%;
+}
+
+.itemRadio:hover input ~ .radiomark {
+  background-color: #ccc;
+}
+
+.itemRadio input:checked ~ .radiomark {
+  background-color: #5b3971;
+}
+
+.radiomark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.itemRadio input:checked ~ .radiomark:after {
+  display: block;
+}
+
+.itemRadio .radiomark:after {
+	top: 8px;
+	left: 8px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.estiloHora{
+  font-size: 16px;
+  font-weight: bold;
+  margin: 1% 5%;
+  width: 100%;
+  color: #5b3971;
+}
+
+.estiloHora input{
+  font-size: 16px;
+  color: #5b3971;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.botao{
+  width: 40vw;
+  display: inline-flex;
+  justify-content: center;
+  margin-left: 20%;
+  margin-top: 2%;
+}
+
+.botao button{
+  background-color: #5b3971;
+  color: #f2d022;
+  font-weight: bold;
+  font-size: 16px;
+  width: 25%;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+}
+
+@media screen and (max-width:768px){
+  .agenda{
+    margin: 3em auto 6em;
+  }
+
+  .titulo{
+    font-size: 24px;
+  }
+
+  h2{
+    font-size: 18px;
+  }
+
+  .dadosPessoais label{
+    font-size: 14px;
+  }
+  
+  .dadosPessoais input{
+    font-size: 14px;
+  }
+
+  .itemCheckbox {
+    font-size: 14px;
+  }
+
+  .checkmark {
+    height: 18px;
+    width: 18px;
+  }
+
+  .itemCheckbox .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 3px;
+    height: 8px;
+  }
+
+  .procedimento{
+    font-size: 14px;
+  }
+
+  .itemRadio {
+    font-size: 14px;
+  }
+
+  .radiomark {
+    height: 18px;
+    width: 18px;
+  }
+
+  .itemRadio .radiomark:after {
+    top: 4px;
+    left: 4px;
+  }
+  
+  .estiloHora{
+    font-size: 14px;
+  }
+  
+  .estiloHora input{
+    font-size: 14px;
+  }
+
+  .botao button{
+    font-size: 14px;
+  }
+
+}
+@media screen and (max-width:550px){
+  .agenda{
+    margin: 3em auto 4em;
+  }
+
+  .titulo{
+    font-size: 18px;
+  }
+
+  h2{
+    font-size: 16px;
+  }
+
+  .dadosPessoais label{
+    font-size: 12px;
+  }
+  
+  .dadosPessoais input{
+    font-size: 12px;
+  }
+
+  .itemCheckbox {
+    font-size: 12px;
+  }
+
+  .checkmark {
+    height: 14px;
+    width: 14px;
+  }
+
+  .itemCheckbox .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 2px;
+    height: 6px;
+  }
+
+  .procedimento{
+    font-size: 12px;
+  }
+
+  .itemRadio {
+    font-size: 12px;
+  }
+
+  .radiomark {
+    height: 14px;
+    width: 14px;
+  }
+
+  .itemRadio .radiomark:after {
+    top: 3px;
+    left: 3px;
+    width: 6px;
+    height: 6px;
+  }
+  
+  .estiloHora{
+    font-size: 12px;
+  }
+  
+  .estiloHora input{
+    font-size: 12px;
+  }
+
+  .botao button{
+    font-size: 12px;
+  }
+}

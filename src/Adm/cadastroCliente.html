@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/admin.css" />
+    <title>Administração do Ateliê Maju Galé</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body class="bgcolor">
+    <nav class="navbar navbar-expand-sm fixed-top d-flex">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="/images/logo.svg" alt="logo ateliê Maju Galé">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Adm/admin.html">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Adm/adminAgenda.html">Agenda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Cadastros</a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="../Adm/cadastroCliente.html">Cliente</a></li>
+                            <li><a class="dropdown-item" href="../Adm/cadastroColaborador.html">Colaborador</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../Adm/cadastroServico.html">Serviço</a></li>
+                            <li><a class="dropdown-item" href="../Adm/cadastroPacote.html">Pacote</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid" style="margin-top: 10rem;">
+        <!-- MUDAR O BOTÃO TARGET PARA ADD, UPDATE OU DELETE -->
+        <div class="d-flex justify-content-end">
+            <button type="button" class="btn btn-warning btn-lg font-sora fw-semibold" data-bs-target="#addModal"
+                data-bs-toggle="modal"> Novo Cliente </button>
+        </div>
+        <table class=" table table-hover mt-5 p-3 mb-3 bg-warning text-dark" id="cadastro">
+            <thead>
+                <tr>
+                    <th id="id_cliente" scope="col">ID</th>
+                    <th id="nome" scope="col">Nome</th>
+                    <th id="telefone" scope="col">Telefone</th>
+                    <th id="endereco" scope="col">Endereço</th>
+                    <th id="bairro" scope="col">Bairro</th>
+                    <th id="complemento" scope="col">Complemento</th>
+                    <th id="cidade" scope="col">Cidade</th>
+                    <th id="cpf" scope="col">CPF</th>
+                    <th id="data_nascimento" scope="col">Data Nascimento</th>
+                    <th id="observacao" scope="col">Observação</th>
+                    <th id="email" scope="col">Email</th>
+                    <th id="senha" scope="col">Senha</th>
+                    <th scope="col">Edição</th>
+                    <th scope="col">Exclusão</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--     -->
+            </tbody>
+        </table>
+        <!-- Modals -->
+        <section>
+            <div class="container">
+                <!-- Modal de Cadastro Cliente -->
+                <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Cadastrar Novo Cliente</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="form" class="row g-1">
+                                    <label for="m-nome">Nome do Cliente</label>
+                                    <input id="m-nome" type="text" required>
+                                    <label for="m-telefone">Telefone</label>
+                                    <input id="m-telefone" type="number" required>                                    
+                                    <label for="m-endereco">Endereço</label>
+                                    <input id="m-endereco" type="text" required>
+                                    <label for="m-bairro">Bairro</label>
+                                    <input id="m-bairro" type="text" required>
+                                    <label for="m-complemento">Complemento</label>
+                                    <input id="m-complemento" type="text">
+                                    <label for="m-cidade">Cidade</label>
+                                    <input id="m-cidade" type="text" required>
+                                    <label for="m-cpf">CPF</label>
+                                    <input id="m-cpf" type="number" required>
+                                    <label for="m-dataNascimento">Data Nascimento</label>
+                                    <input id="m-dataNascimento" type="date" required>
+                                    <label for="m-observacao">Observação</label>
+                                    <input id="m-observacao" type="text">
+                                    <label for="m-email">Email</label>
+                                    <input id="m-email" type="text" required>
+                                    <label for="m-senha">Senha</label>
+                                    <input id="m-senha" type="text" required>
+                                </form>                                                       
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary"
+                                    data-bs-dismiss="modal">Cancelar</button>
+                                <button type="submit" id="btnSalvar" class="btn btn-success">Salvar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal de Atualizar Serviço -->
+                <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Atualizar Cliente</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <form id="form" class="row g-1">
+                                    <label for="u-nome">Nome do Cliente</label>
+                                    <input id="u-nome" type="text" required>
+                                    <label for="u-telefone">Telefone</label>
+                                    <input id="u-telefone" type="number" required>                                    
+                                    <label for="u-endereco">Endereço</label>
+                                    <input id="u-endereco" type="text" required>
+                                    <label for="u-bairro">Bairro</label>
+                                    <input id="u-bairro" type="text" required>
+                                    <label for="u-complemento">Complemento</label>
+                                    <input id="u-complemento" type="text">
+                                    <label for="u-cidade">Cidade</label>
+                                    <input id="u-cidade" type="text" required>
+                                    <label for="u-cpf">CPF</label>
+                                    <input id="u-cpf" type="number" required>
+                                    <label for="u-dataNascimento">Data Nascimento</label>
+                                    <input id="u-dataNascimento" type="date" required>
+                                    <label for="u-observacao">Observação</label>
+                                    <input id="u-observacao" type="text">
+                                    <label for="u-email">Email</label>
+                                    <input id="u-email" type="text" required>
+                                    <label for="u-senha">Senha</label>
+                                    <input id="u-senha" type="text" required>
+                                </form>    
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary"
+                                    data-bs-dismiss="modal">Cancelar</button>
+                                <button type="submit" id="btnAlterar" class="btn btn-warning">Alterar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal de Exclusão Serviço -->
+                <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Excluir Serviço</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    Tem certeza que deseja excluir a cliente?
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary"
+                                    data-bs-dismiss="modal">Cancelar</button>
+                                <button type="submit" id="btnSim" class="btn btn-danger">Excluir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+            </div>
+        </section>
+    </div>
+    <div class="container p-5 my-5"> </div>
+
+
+
+
+    <div class="container p-5 my-5"> </div>
+
+<footer class="footer bgcolorfooter text-light text-center fixed-bottom mt-7">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="mb-0"><a href="/src/index.html" class="btnSair" style="text-decoration: none;">Sair</a></p>
+            </div>
+            <div class="col-md-12 textcolor">
+                <p class="mb-0">Desenvolvido por @KamiHouse</p>
+            </div>
+         </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script type="text/javascript" src="/js/cliente.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

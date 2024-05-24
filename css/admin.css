@@ -1,0 +1,94 @@
+/*Gerais*/
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+html{
+    height: 100%;
+}
+  
+body{
+    height: 100%;
+    background-color: #EEE;
+    font-family: 'Sora';
+}
+
+
+#logo{
+    width: 100px;
+    height: auto;
+    margin-left: 8%;
+    margin-top: 1%;
+}
+  
+#logo img{
+    width: 150px;
+    height: auto;
+    min-width: 20%;
+    min-height: 20%;
+}
+
+.navbar{
+    background-color: #5b3971; 
+}
+
+.navbar .nav-link{
+    color: #f2d022;
+    font-size: 20px;
+    font-weight: 500;    
+}
+
+.collapse{
+    display: flex;
+    justify-content: center;
+}
+
+.bgcolor{
+    background-color: #EEE;
+}
+
+.btnadm{
+    background-color: #5b3971;
+    border-color: #5b3971;
+    border-radius: 10px;
+    color: #f2d022;
+    font-weight: 500;
+    height: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btnadm:hover {
+    background-color: #4a2b56;
+    border-color: #4a2b56;
+}
+
+.btnSair{
+    color: #f2d022;
+    font-weight: bold;
+    font-size:x-large;
+}
+
+.textcolor{
+    color: #f2d022;
+    text-align: end;
+}
+
+.bgcolorfooter{
+    background-color: #5b3971;
+    color: #f2d022;
+}
+
+
+/* #wrapper{
+    min-height: 100%;
+    max-width: 100vw;
+    position: relative;
+}*/
+/*   
+.container-fluid{
+    display: flex;
+    position: relative;
+}
+ */
+
+
+
